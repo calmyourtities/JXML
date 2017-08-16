@@ -1,2 +1,2 @@
 # JXML
-A simple, lightweight and fast XML parser for Jaca.
+A simple, lightweight and fast XML parser for Java.
