@@ -12,6 +12,7 @@ public class Element {
     //private Property[] properties = new Property[10];
     private List<Property> properties = new ArrayList<>();
     private List<Element> children = new ArrayList<>();
+    private Element parent;
     public void setTagName(String name) {
         this.tagName = name;
     }
@@ -35,4 +36,10 @@ public class Element {
     }
     public List<Property> getProperties() { return properties; }
     public List<Element> getChildren() { return children; }
+    public Element getParent() { return parent; }
+
+    public Element() {}
+    public Element(Element parent) {
+        this.parent = parent;
+    }
 }
